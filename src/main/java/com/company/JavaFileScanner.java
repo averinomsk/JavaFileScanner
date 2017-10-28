@@ -11,13 +11,13 @@ public class JavaFileScanner {
         /**
          *  Задаем путь к файлу
          */
-        String fileName = "C:/Test/test.java";
+        String fileName = "./Test/test.java";
         Path path = Paths.get(fileName);
         Scanner scanner = new Scanner(path);
         /**
-         * Подключаем FileWriter и настраиваем его на перезапись файла создаваемого файла.
+         * Подключаем @param FileWriter и настраиваем его на перезапись файла создаваемого файла.
          */
-        FileWriter writer = new FileWriter("C:/Test/testReWrite.java", false);
+        FileWriter writer = new FileWriter("./Test/testReWrite.java", false);
         String lineString = "    ";
 
 
